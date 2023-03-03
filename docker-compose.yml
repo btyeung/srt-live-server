@@ -1,7 +1,9 @@
 version: '3'
 services:
+  
   srt:
     image: ravenium/srt-live-server
+    restart: always
     ports: 
       - "1935:1935/udp"
     volumes:
